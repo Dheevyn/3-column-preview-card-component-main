@@ -1,0 +1,158 @@
+@import url('https://fonts.google.com/specimen/Lexend+Deca');
+@import url('https://fonts.google.com/specimen/Big+Shoulders+Display');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+    margin: 3rem 5rem 0 8.5rem;
+}
+/* Full card property */
+main {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    width: 1000px;
+}
+/* setting up the sedan half */
+.sedan-sec {
+    background-color: hsl(31, 77%, 52%);
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+}
+/* image tag */
+img {
+    padding: 10px;
+}
+/* Code for the headers */
+h1 {
+    font-family: 'Big Shoulders Display', Courier, monospace;
+    padding: 10px;
+    color: hsl(0, 0%, 95%);
+    font-weight: 700;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+/* Setting the P element */
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 13px;
+    height: 150px;
+    font-weight: 400;
+    line-height: 1.5rem;
+    padding: 10px;
+    margin-bottom: 35px;
+}
+/* Setting the height of the three sec */
+.sedan-sec, .suv-sec, .lux-sec {
+    height: 400px;
+
+}
+/* Styling each sec */
+.suv-sec {
+    background-color: hsl(184, 100%, 22%);
+    padding: 20px;
+}
+/* Styling each sec */
+.lux-sec {
+    background-color: hsl(179, 100%, 13%);
+    padding: 20px;
+    border-radius: 0 10px 10px 0;
+}
+/* property for the sedan-sec btn */
+.sedan-sec .btn {
+    border: none;
+    padding: 10px;
+    color: hsl(31, 77%, 52%);
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 40px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    margin-left: 7px;
+}
+/* property for the suv-sec btn */
+.suv-sec .btn {
+    border: none;
+    padding: 10px;
+    color: hsl(184, 100%, 22%);
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 40px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    margin-left: 7px;
+}
+/* property for the lux-sec btn */
+.lux-sec .btn {
+    border: none;
+    padding: 10px;
+    color: hsl(179, 100%, 13%);
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 40px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    margin-left: 7px;
+}
+/* font for the button */
+.btn {
+    font-family: 'Lexend Deca', Courier, monospace;
+    font-weight: 400;
+}
+
+/* When you hover on the button*/
+.btn:hover{
+    background-color: transparent;
+    color: white;
+    border: 2px solid hsl(0, 0%, 95%);
+}
+/* Name tag section */
+.attribution {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Big Shoulders Display', Courier, monospace;
+    font-weight: 700;
+}
+.attribution a {
+  color: hsl(184, 100%, 22%);
+}
+.attribution a:hover {
+    color: hsl(179, 100%, 13%);
+    text-decoration: underline;
+}
+/* Set to mobile view */
+@media screen and (max-width: 770px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        margin: 45px;
+    }
+    /* To set the sec vertically */
+    main{
+        width: 400px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    .attribution {
+        padding: 15px;
+    }
+    /* To et the border radius of the card */
+    .sedan-sec {
+        border-radius: 10px 10px 0 0;
+    }
+    .lux-sec {
+        border-radius: 0 0 10px 10px;
+    }
+}
+    
